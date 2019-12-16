@@ -59,3 +59,5 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 
 # Facebook OAuth2 Strategy for OmniAuth
 gem 'omniauth-facebook', '~> 5.0'
+
+gem 'dotenv-rails'
