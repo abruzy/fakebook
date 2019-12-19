@@ -1,1 +1,39 @@
-<h1>Home</h1>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card profile">
+        <div class="card-body">
+          <%= gravatar_for current_user, 70 %>
+          <h6 class="card-title mt-3"><%= name%></h6>
+          <p class="card-text"><%= current_user.email%></p>
+          <p class="card-text"><%= current_user.address%></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      
+      <div class="card start-feed">
+        <div class="card-body start-feed-content">
+          <div>
+            <a href="#"> <i class="fa fa-pencil"> </i>  start a post</a>
+          </div>
+          <div>
+            <a href="#"> <i class="fa fa-camera"> </i> upload an image</a>
+          </div>
+          <div>
+            <a href="#"> <i class="fa fa-newspaper-o"> </i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
