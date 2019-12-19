@@ -8,4 +8,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create([first_name: 'john', last_name: 'doe', email: 'johndoe1@gmail.com', adderes: 'mende', password: '1234562'])
+require 'faker'
+
+User.create([{email: "raaheebwa@gmail.com", first_name: "Aheebwa",
+  last_name: "Ramadhan", address: "Uganda", password: "password", password_confirmation: "password"}, 
+ {email: "israellaguan@gmail.com", first_name: "Israel", last_name: "Laguan", address: "Colombia" , password: "password", password_confirmation: "password"}])
