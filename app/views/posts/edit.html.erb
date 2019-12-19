@@ -1,2 +1,15 @@
-<h1>Posts#edit</h1>
-<p>Find me in app/views/posts/edit.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Edit Post</h1>
+      <%= form_for @post do |f| %>
+        <%= f.label :description, 'Description' %><br><br>
+        <%= f.text_area :description, class: 'form-control' %> <br><br>
+
+        <%= f.label :image, "Image" %><br><br>
+        <%= f.file_field :image, class: 'form-control' %> <br><br>
+    
+        <%= f.submit "Create", class: "btn btn-primary mt-2" %>
+      <% end %>
+  </div>
+</div>

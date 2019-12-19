@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :find_post, only: %i[edit update]
 
   def index
-    @post = Post.all
+    @posts = Post.all
   end
 
   def new
@@ -39,7 +39,7 @@ class PostsController < ApplicationController
   private
 
   def find_post
-    @post = current_user.posts.find(params[:id])
+    @post = current_user.posts.friendly.find(params[:id])
   end
 
   def post_params

@@ -6,6 +6,7 @@
     <% if current_user %>
       <small><b>By</b> <%= @post.user.first_name %></small>
     <% end %>
+    <a class="btn btn-primary btn-lg" <%= link_to "Edit", edit_post_path(@post) %></a>
   </div>
 </div>
 </div>

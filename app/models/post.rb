@@ -8,4 +8,8 @@ class Post < ApplicationRecord
     self.description.each_char { |i|  data.size <= 10 ? data << i : break }
     data
   end
+
+  # def update_slug
+  #   friendly_id
+  # end
 end
