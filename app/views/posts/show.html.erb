@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  <div class="card">
+  <div class="card-body">
+    <h5 class="card-title"><%= @post.description %></h5>
+    <p class="card-text"><%= @post.image %></p>
+    <% if current_user %>
+      <small><b>By</b> <%= @post.user.first_name %></small>
+    <% end %>
+  </div>
+</div>
+</div>
