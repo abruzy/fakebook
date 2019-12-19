@@ -10,7 +10,8 @@ class User < ApplicationRecord
          
   validates :first_name, presence: true
   validates :last_name, presence: true
-
+  
+  has_many :posts, class_name: "Post", foreign_key: "user_id", dependent: :destroy
 
   def name
     [
