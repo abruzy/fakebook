@@ -6,7 +6,6 @@ class PostTest < ActiveSupport::TestCase
   def setup
     @user = User.new(first_name: 'john', last_name: 'doe', email: 'johndoe1@gmail.com', address: 'mende', password: '1234562', password_confirmation: '1234562')
     @user.save
-
     @post = @user.posts.new(description: 'Here we come', image: 'vffdnvxkkf')
   end
 
