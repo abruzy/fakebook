@@ -16,15 +16,16 @@
 <body>
   <%= render 'layouts/nav' %>
   <% if current_user%>
+  <%@user ||= current_user%>
   <div class="container mt-4">
     <div class="row">
       <div class="col-md-3">
         <div class="card profile">
           <div class="card-body">
-            <%= gravatar_for current_user, 70 %>
+            <%= gravatar_for @user, 70 %>
             <h6 class="card-title mt-3"><%= name%></h6>
-            <p class="card-text"><%= current_user.email%></p>
-            <p class="card-text"><%= current_user.address%></p>
+            <p class="card-text"><%= @user.email%></p>
+            <p class="card-text"><%= @user.address%></p>
           </div>
         </div>
       </div>
