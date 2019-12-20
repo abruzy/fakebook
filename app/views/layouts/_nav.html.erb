@@ -4,13 +4,13 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Facebook</a>
+      <a class="navbar-brand" <%= link_to "Facebook", root_path %> </a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" <%= link_to "Home", root_path %> </a> <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" <%= link_to "Posts", posts_path %> </a></a>
         </li>
         <li class="nav-item">
           <% if current_user%>
