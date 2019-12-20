@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Post < ApplicationRecord
   extend FriendlyId
   friendly_id :name, use: :slugged
@@ -5,7 +7,7 @@ class Post < ApplicationRecord
 
   def name
     data = ''
-    self.description.each_char { |i|  data.size <= 10 ? data << i : break }
+    description.each_char { |i| data.size <= 10 ? data << i : break }
     data
   end
 

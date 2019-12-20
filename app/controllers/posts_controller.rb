@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PostsController < ApplicationController
   before_action :find_post, only: %i[edit update]
 
@@ -10,7 +12,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.friendly.find(params[:id]) 
+    @post = Post.friendly.find(params[:id])
   end
 
   def create

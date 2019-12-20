@@ -14,5 +14,4 @@ module ApplicationHelper
   def post_owner(post)
     post.user.first_name + ' ' + post.user.last_name
   end
-
 end
