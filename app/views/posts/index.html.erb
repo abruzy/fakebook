@@ -1,11 +1,6 @@
-<div class="container mt-5">
-<% flash.each do |message_type, message| %>
-  <div class="alert alert-<%= message_type %>"><%= message %></div>
-<% end %>
   <div class="list-group">
     <% if !@posts.blank? %>
       <% @posts.each do |post| %>
-        
         <div class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <%= link_to post.description, post %>
@@ -20,4 +15,3 @@
       Nothing Here
     <%end%>
   </div>
-</div>

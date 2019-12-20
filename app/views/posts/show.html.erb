@@ -1,12 +1,10 @@
-<div class="container mt-5">
-  <div class="card">
+<div class="card">
   <div class="card-body">
     <h5 class="card-title"><%= @post.description %></h5>
     <p class="card-text"><%= @post.image %></p>
     <% if current_user %>
-      <small><b>By</b> <%= @post.user.first_name %></small>
+    <small><b>By</b> <%= post_owner @post %></small>
     <% end %>
-    <a class="btn btn-primary btn-lg" <%= link_to "Edit", edit_post_path(@post) %></a>
-  </div>
-</div>
+    <a class="btn btn-primary btn-sm" <%= link_to "Edit", edit_post_path(@post) %></a> 
+  </div> 
 </div>
