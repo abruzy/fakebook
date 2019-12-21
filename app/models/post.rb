@@ -2,16 +2,11 @@
 
 class Post < ApplicationRecord
   extend FriendlyId
-  friendly_id :name, use: :slugged
+  friendly_id :truncated_name, use: :slugged
   belongs_to :user
 
-  def name
-    data = ''
-    description.each_char { |i| data.size <= 10 ? data << i : break }
-    data
+  def truncated_name
+    description.split[0..4].join(' ')
   end
 
-  # def update_slug
-  #   friendly_id
-  # end
 end

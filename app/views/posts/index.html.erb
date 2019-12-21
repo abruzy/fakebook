@@ -1,17 +1,18 @@
-  <div class="list-group">
-    <% if !@posts.blank? %>
-      <% @posts.each do |post| %>
-        <div class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <%= link_to post.description, post %>
-            <% if current_user %>
-              <small>By <%= post.user.first_name %></small>
-            <% end %>
-            <small><%= post.created_at.strftime("%A %B %d, %Y") %></small>
-          </div>
-        </div>
-      <%end%>
-    <% else %>
-      Nothing Here
+<% if !@posts.blank? %>
+<% @posts.each do |post| %>
+<div class="card mt-4">
+  <div class="card-body">
+    <div>
+      <%= gravatar_for post.user, 40 %>
+      <small><%= post_owner post%></small>
+    </div>
+    <p class="card-text"><%= link_to truncate(post.description), post %></p>
+    <% if post.image %>
+    <img class="card-img-top" src="..." alt="Card image cap">
     <%end%>
   </div>
+</div>
+<%end%>
+<% else %>
+Nothing Here
+<%end%>

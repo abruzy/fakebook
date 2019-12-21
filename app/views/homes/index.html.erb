@@ -16,7 +16,7 @@
 <div class="card mt-4">
   <div class="card-body">
     <div>
-      <%= gravatar_for current_user, 40 %>
+      <%= gravatar_for post.user , 40 %>
       <small><%= post_owner post%></small>
     </div>
     <p class="card-text"><%= link_to truncate(post.description), post %></p>
