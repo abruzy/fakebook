@@ -8,5 +8,4 @@ class Post < ApplicationRecord
   def truncated_name
     description.split[0..4].join(' ')
   end
-
 end

@@ -3,7 +3,8 @@
 require 'test_helper'
 
 class HomesControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test 'should get the index page' do
+    get '/'
+    assert :success
+  end
 end
