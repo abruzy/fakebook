@@ -5,6 +5,8 @@ class Post < ApplicationRecord
   friendly_id :truncated_name, use: :slugged
   belongs_to :user
 
+  validates :description, presence: true, length: { minimum: 5 }
+
   def truncated_name
     description.split[0..4].join(' ')
   end
