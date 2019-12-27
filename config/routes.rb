@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: 'homes#index'
 
   resources :posts
-  resources :users, only: [:index]
+  resources :users, only: [:index, :show]
   devise_for :users, skip: [:sessions]
   as :user do
     get 'login', to: 'devise/sessions#new', as: :new_user_session

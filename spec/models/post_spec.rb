@@ -1,13 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Post do
+RSpec.describe Post, type: :model do
   let(:post) { FactoryBot.build(:post) }
-
-  describe "validations" do
-    it { is_expected.to validate_presence_of(:description) }
-    it { should ensure_length_of(:description).is_at_least(5) }
-  end
-
+  
   describe "association" do
     it { belong_to(:user) }
   end

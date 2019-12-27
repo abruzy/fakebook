@@ -69,3 +69,5 @@ gem 'omniauth-facebook', '~> 5.0'
 gem 'dotenv-rails'
 
 gem 'friendly_id', '~> 5.2.4'
+
+gem 'rails-controller-testing'
