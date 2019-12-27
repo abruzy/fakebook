@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Post do
-  let(:post) { FactoryBot.create(:post) }
+RSpec.describe Post, type: :model do
+  let(:post) { FactoryBot.build(:post) }
 
   # describe "validations" do
   #   it { is_expected.to validate_presence_of(:description) }
