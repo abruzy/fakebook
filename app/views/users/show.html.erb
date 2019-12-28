@@ -11,31 +11,20 @@
     </div>
   </div>
 </div>
-<% if !@posts.blank? %>
-<% @posts.each do |post| %>
 <div class="card mt-4">
-  <div class="card-header">
+  <div class="card-body">
     <div class="card-flex">
-      <div><%= gravatar_for post.user , 40 %></div>
-      <div class="post-header">
-        <p class="post-header-detail"><%= link_to post_owner(post), post.user%></p>
-        <p class="post-header-detail"><%= post.user.email%></p>
-        <p class="post-header-detail"><%= time_ago_in_words(post.created_at) %> ago</p>
+      <div><%= gravatar_for @user , 100 %></div>
+      <div class="user-header">
+        <p class="user-detail"><%= name(@user)%></p>
+        <p class="user-detail"><%= @user.email%></p>
+        <p class="user-detail">Joined <%= time_ago_in_words(@user.created_at) %> ago</p>
       </div>
     </div>
   </div>
-  <div class="card-body">
-    <p class="card-text"><%= link_to truncate(post.description), post %></p>
-    <% if post.image %>
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <%end%>
-  </div>
   <div class="card-footer text-muted">
-   <a> <i class="fa fa-thumbs-up">Like</i> </a>
-   <a><i class="fa fa-comments-o"> Comment</i> </a>
+   <a class="btn"><%= link_to 'Posts', user_post_path%></a>
+   <a class="btn">Comment</a>
+   <a class="btn">Friends</a>
   </div>
 </div>
-<%end%>
-<% else %>
-Nothing Here
-<%end%>

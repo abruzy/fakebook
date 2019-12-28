@@ -18,4 +18,9 @@ module ApplicationHelper
   def post_owner(post)
     post.user.first_name + ' ' + post.user.last_name
   end
+
+  def profile_route
+    current_page?(user_path(:id))
+  end
+
 end

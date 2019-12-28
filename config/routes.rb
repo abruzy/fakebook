@@ -3,8 +3,11 @@
 Rails.application.routes.draw do
   root to: 'homes#index'
 
+  get '/user-post/:id', to: 'posts#user_posts', as: :user_post
+
   resources :posts
   resources :users, only: [:index, :show]
+
   devise_for :users, skip: [:sessions]
   as :user do
     get 'login', to: 'devise/sessions#new', as: :new_user_session
