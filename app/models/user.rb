@@ -19,6 +19,7 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
 
   has_many :posts, class_name: 'Post', foreign_key: 'user_id', dependent: :destroy
+  has_many :comments
 
   def name
     [
