@@ -22,5 +22,4 @@ module ApplicationHelper
   def profile_route
     current_page?(user_path(:id))
   end
-
 end

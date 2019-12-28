@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Users' do
@@ -6,11 +8,11 @@ RSpec.describe 'Users' do
 
   def new_user
     {
-      first_name: Faker::Name::first_name,
-      last_name: Faker::Name::last_name,
-      email: Faker::Internet::email,
-      address: Faker::Address::street_address,
-      password: Faker::Internet::password
+      first_name: Faker::Name.first_name,
+      last_name: Faker::Name.last_name,
+      email: Faker::Internet.email,
+      address: Faker::Address.street_address,
+      password: Faker::Internet.password
     }
   end
 

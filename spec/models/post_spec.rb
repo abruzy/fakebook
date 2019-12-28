@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   let(:post) { FactoryBot.build(:post) }
-  
-  describe "association" do
+
+  describe 'association' do
     it { belong_to(:user) }
   end
 
@@ -15,5 +17,4 @@ RSpec.describe Post, type: :model do
     post.description = ''
     expect(post).not_to be_valid
   end
-
 end
