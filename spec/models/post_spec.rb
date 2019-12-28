@@ -8,7 +8,7 @@ RSpec.describe Post, type: :model do
   end
 
   it 'is valid post if it has at least five character length content' do
-    expect(Post.new).to be_valid
+    expect(post).to be_valid
   end
 
   it 'is invalid post if it does not have content' do

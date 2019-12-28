@@ -19,6 +19,13 @@
     font-size: small;  
  }
 
+ .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+ }
+
  .navbar-brand {
    font-size: 15px;
  }
