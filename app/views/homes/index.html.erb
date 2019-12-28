@@ -26,9 +26,7 @@
   </div>
   <div class="card-body">
     <p class="card-text"><%= link_to truncate(post.description), post %></p>
-    <% if post.image %>
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <%end%>
+    <div class="img-div"><%= image_tag post.image, width:"500px", class:"img-fluid" if post.image.attached?%></div>
   </div>
   <div class="card-footer text-muted">
     <a><i class="fa fa-thumbs-up"> 7 </i></a></a>

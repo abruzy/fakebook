@@ -5,6 +5,8 @@ class Post < ApplicationRecord
   friendly_id :truncated_name, use: :slugged
   belongs_to :user
 
+  has_one_attached :image
+
   validates :description, presence: true, length: { minimum: 5 }
 
   def truncated_name
