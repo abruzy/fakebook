@@ -18,8 +18,8 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
 
-  has_many :posts, class_name: 'Post', foreign_key: 'user_id', dependent: :destroy
-  has_many :comments
+  has_many :posts, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
   def name
     [

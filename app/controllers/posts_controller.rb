@@ -4,11 +4,17 @@ class PostsController < ApplicationController
   before_action :find_post, only: %i[edit update]
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order('created_at DESC')
   end
 
   def new
     @post = Post.new
+  end
+
+  def user_posts
+    @user = User.friendly.find(params[:id])
+    @posts = @user.posts.order('created_at DESC')
+    render 'index'
   end
 
   def show

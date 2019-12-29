@@ -1,0 +1,30 @@
+<div class="card start-feed">
+  <div class="card-body start-feed-content">
+    <div>
+      <a <i class="fa fa-pencil"> <%= link_to "start a post", new_post_path %> </i></a>
+    </div>
+    <div>
+      <a <i class="fa fa-camera"> <%= link_to "upload an image", new_post_path %> </i> </a>
+    </div>
+    <div>
+      <a href="#"> <i class="fa fa-newspaper-o"> </i></a>
+    </div>
+  </div>
+</div>
+<div class="card mt-4">
+  <div class="card-body">
+    <div class="card-flex">
+      <div><%= gravatar_for @user , 100 %></div>
+      <div class="user-header">
+        <p class="user-detail"><%= name(@user)%></p>
+        <p class="user-detail"><%= @user.email%></p>
+        <p class="user-detail">Joined <%= time_ago_in_words(@user.created_at) %> ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+   <a class="btn"><%= link_to 'Posts', user_post_path%></a>
+   <a class="btn">Comment</a>
+   <a class="btn">Friends</a>
+  </div>
+</div>

@@ -1,17 +1,28 @@
-  <div class="list-group">
-    <% if !@posts.blank? %>
-      <% @posts.each do |post| %>
-        <div class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <%= link_to post.description, post %>
-            <% if current_user %>
-              <small>By <%= post.user.first_name %></small>
-            <% end %>
-            <small><%= post.created_at.strftime("%A %B %d, %Y") %></small>
-          </div>
-        </div>
-      <%end%>
-    <% else %>
-      Nothing Here
+<% if !@posts.blank? %>
+<% @posts.each do |post| %>
+<div class="card mt-4">
+  <div class="card-header">
+    <div class="card-flex">
+      <div><%= gravatar_for post.user , 40 %></div>
+      <div class="post-header">
+        <p class="post-header-detail"><%= link_to post_owner(post), post.user%></p>
+        <p class="post-header-detail"><%= post.user.email%></p>
+        <p class="post-header-detail"><%= time_ago_in_words(post.created_at) %> ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-text"><%= link_to truncate(post.description), post %></p>
+    <% if post.image %>
+    <div class="img-div"><%= image_tag post.image, width:"500px", class:"img-fluid" if post.image.attached?%></div>
     <%end%>
   </div>
+  <div class="card-footer text-muted">
+    <a><i class="fa fa-thumbs-up"> 7 </i></a></a>
+    <a></a> <i class="fa fa-comment-o"> <%= link_to " comments", new_post_path %> </i></a>
+  </div>
+</div>
+<%end%>
+<% else %>
+Nothing Here
+<%end%>

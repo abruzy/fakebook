@@ -1,10 +1,10 @@
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title"><%= @post.description %></h5>
-    <p class="card-text"><%= @post.image %></p>
-    <% if current_user %>
-    <small><b>By</b> <%= post_owner @post %></small>
-    <% end %>
+    <%= gravatar_for @post.user, 40 %> <small><b>By</b> <%= post_owner @post %></small>
+    <p class="card-title"><%= @post.description %></p>
+    <p class="card-text"><%= image_tag @post.image, width:"500px", class:"img-fluid" if @post.image.attached?%></p>
+    <% if owner @post %>
     <a class="btn btn-primary btn-sm" <%= link_to "Edit", edit_post_path(@post) %></a> 
+    <%end%>
   </div> 
 </div>
