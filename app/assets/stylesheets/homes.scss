@@ -1,0 +1,44 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.card {
+  margin-top: 3rem;
+}
+
+.start-feed .card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.start-feed-content a {
+  text-decoration: none;
+  color: gray;
+}
+
+.start-feed-content a:hover {
+  color: #4b2df5;
+}
+
+.profile {
+  width: 100%;
+  text-align: center;
+  line-height: 2px;
+  font-size: 12px;
+}
+
+.card-flex {
+  display: flex;
+  line-height: 3px;
+}
+
+.post-header {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.card-flex .post-header-detail {
+  font-size: 12px;
+  
+}
