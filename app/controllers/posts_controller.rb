@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   before_action :find_post, only: %i[edit update]
 
   def index
-    @posts = Post.all.order('created_at DESC')
+    @posts = Post.includes(:user).all.order('created_at DESC')
   end
 
   def new
@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.friendly.find(params[:id])
+    @post = Post.includes(:comments).friendly.find(params[:id])
   end
 
   def create

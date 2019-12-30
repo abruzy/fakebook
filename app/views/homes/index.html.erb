@@ -28,9 +28,10 @@
     <p class="card-text"><%= link_to truncate(post.description), post %></p>
     <div class="img-div"><%= image_tag post.image, width:"500px", class:"img-fluid" if post.image.attached?%></div>
   </div>
-  <div class="card-footer text-muted">
-    <a><i class="fa fa-thumbs-up"> 7 </i></a></a>
-    <a <i class="fa fa-comment-o"> <%= link_to " comments", new_post_path %> </i></a>
+  <div class="card-footer text-muted like-and-comments">
+    <%= link_to '', like_path(post), class:'like fa fa-thumbs-up'  %>
+    <i><%= post.likes.count%></i>
+    <%= link_to 'comments', new_comment_path(post)%>
   </div>
 </div>
 <%end%>
