@@ -19,7 +19,7 @@ RSpec.describe User, type: :model do
     expect(new_user).to be_valid
   end
 
-  it 'is invallid when user does not provide first name' do
+  it 'is invalid when user does not provide first name' do
     new_user.first_name = ''
     expect(new_user).not_to be_valid
   end
