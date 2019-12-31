@@ -1,5 +1,5 @@
 class FriendsController < ApplicationController
-  before_action :find_user, only: %i[friends, pending_friends]
+  before_action :find_user, only: %i[friends pending_friends]
   def create
     
   end
