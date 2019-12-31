@@ -1,11 +1,11 @@
+# frozen_string_literal: true
+
 class FriendsController < ApplicationController
   before_action :find_user, only: %i[friends pending_friends]
-  def create
-    
-  end
+  def create; end
 
   def friends
-   @friends = @user.friends
+    @friends = @user.friends
   end
 
   def pending_friends
@@ -13,12 +13,10 @@ class FriendsController < ApplicationController
 
     render 'friends'
   end
-  
 
   private
 
   def find_user
     @user = User.friendly.find(params[:id])
   end
-  
 end
