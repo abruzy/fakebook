@@ -27,6 +27,7 @@
             <h6 class="card-title mt-3"><%= name%></h6>
             <p class="card-text"><%= current_user.email%></p>
             <p class="card-text"><%= current_user.address%></p>
+            <p class="card-text">Friends: <%= current_user.friends.count%></p>
           </div>
         </div>
       </div>

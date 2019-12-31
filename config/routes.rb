@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'comment/:id', to: 'comments#new', as: :new_comment
   post 'comment/:id', to: 'comments#create', as: :comments
 
+  get 'friends/:id', to: 'friends#friends', as: :friends
+  get 'pending-friends/:id', to: 'friends#pending_friends', as: :pending_friends
+
   devise_for :users, skip: [:sessions]
   as :user do
     get 'login', to: 'devise/sessions#new', as: :new_user_session

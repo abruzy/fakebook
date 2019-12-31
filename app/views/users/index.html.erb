@@ -1,15 +1,17 @@
-<% if !@users.blank? %>
-<% @users.each do |user| %>
-<div class="card mt-4">
-  <div class="card-body">
-    <div>
-      <%= gravatar_for user, 40 %>
-      <b><%= name user %></b>
-      <p><%= user.address%></p>
+<div class="mt-5">
+  <% if !@users.blank? %>
+  <% @users.each do |user| %>
+  <div class="card mt-4">
+    <div class="card-body">
+      <div>
+        <%= gravatar_for user, 40 %>
+        <b><%= name user %></b>
+        <p><%= user.address%></p>
+      </div>
     </div>
   </div>
+  <%end%>
+  <% else %>
+  Nothing Here
+  <%end%>
 </div>
-<%end%>
-<% else %>
-Nothing Here
-<%end%>
