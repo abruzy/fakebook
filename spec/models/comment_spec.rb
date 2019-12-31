@@ -9,12 +9,9 @@ RSpec.describe Comment, type: :model do
     it { is_expected.to validate_presence_of(:body) }
   end
 
-  describe 'post associations' do
-    it { should belong_to(:post) }
-  end
-
-  describe 'user association' do
+  describe 'associations' do
     it { should belong_to(:user) }
+    it { should belong_to(:post) }
   end
 
   it 'is a valid comment' do
