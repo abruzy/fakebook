@@ -32,7 +32,7 @@ class User < ApplicationRecord
 
   def friends
     friends_array = friendships.map { |friendship| friendship.friend if friendship.comfirmed }
-    friends_array + inverse_friendships.map { |friendship| friendship.friend if friendship.comfirmed }
+    friends_array = inverse_friendships.map { |friendship| friendship.friend if friendship.comfirmed }
     friends_array.compact
   end
 
