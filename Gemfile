@@ -53,6 +53,7 @@ group :test do
   gem 'faker', '~> 2.9'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 4.1.2', require: false
+  gem 'simplecov', :require => false
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
