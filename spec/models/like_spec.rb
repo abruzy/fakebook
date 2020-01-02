@@ -9,8 +9,4 @@ RSpec.describe Like, type: :model do
     it { should belong_to(:user) }
     it { should belong_to(:post) }
   end
-
-  it 'is a valid like' do
-    expect(like).to be_valid
-  end
 end

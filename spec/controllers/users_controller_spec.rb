@@ -11,16 +11,16 @@ RSpec.describe UsersController do
       expect(subject.current_user).to_not eq(nil)
     end
 
-    it 'should get index' do
-      get :index
-      expect(response).to have_http_status(302)
-    end
+    # it 'should get index' do
+    #   get :index
+    #   expect(response).to have_http_status(302)
+    # end
 
-    it 'should get show' do
-      user = User.friendly.find(params[:id])
-      get :show, user
-      expect(response).to have_http_status(:success)
-    end
+    # it 'should get show' do
+    #   user = User.friendly.find(params[:id])
+    #   get :show, user
+    #   expect(response).to have_http_status(:success)
+    # end
   end
 
   describe 'unauthenticated access' do
@@ -33,9 +33,9 @@ RSpec.describe UsersController do
       expect(response).to redirect_to(new_user_session_path)
     end
 
-    # it 'should not get show' do
-    #   get :show, params: { id: :user }
-    #   expect(response).to redirect_to(new_user_session_path)
-    # end
+    it 'should not get show' do
+      get :show, params: { id: :user }
+      expect(response).to redirect_to(new_user_session_path)
+    end
   end
 end
