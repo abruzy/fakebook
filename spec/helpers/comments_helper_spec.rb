@@ -4,7 +4,7 @@
 
 #  Specs in this file have access to a helper object that includes
 #  the CommentsHelper. For example:
-# 
+#
 # describe CommentsHelper do
 #   describe "string concat" do
 #     it "concats two strings with spaces" do

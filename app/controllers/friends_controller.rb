@@ -8,10 +8,10 @@ class FriendsController < ApplicationController
     if friendship.save
       flash[:success] = "Friendship sent successfully to #{@user.first_name} "
     else
-      flash[:danger] = "Something went wrong "
+      flash[:danger] = 'Something went wrong '
     end
 
-    redirect_to users_path 
+    redirect_to users_path
   end
 
   def friends
@@ -29,11 +29,10 @@ class FriendsController < ApplicationController
   end
 
   def accept_friend
-    
     if current_user.comfirm_friend(@user)
       flash[:success] = "Friendship confirmed successfully from #{@user.first_name} "
     else
-      flash[:danger] = "Something went wrong "
+      flash[:danger] = 'Something went wrong '
     end
 
     redirect_to friend_request_path

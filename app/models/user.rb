@@ -35,7 +35,7 @@ class User < ApplicationRecord
 
   def friends
     friends_array = []
-    friendships.each{ |friendship| friends_array << friendship.friend if friendship.comfirmed }
+    friendships.each { |friendship| friends_array << friendship.friend if friendship.comfirmed }
     inverse_friendships.each { |friendship| friends_array << friendship.user if friendship.comfirmed }
     friends_array.compact
   end
