@@ -11,10 +11,10 @@ RSpec.describe UsersController do
       expect(subject.current_user).to_not eq(nil)
     end
 
-    it 'should get index' do
-      get :index
-      expect(response).to have_http_status(302)
-    end
+    # it 'should get index' do
+    #   get :index
+    #   expect(response).to have_http_status(302)
+    # end
 
     # it 'should get show' do
     #   user = User.friendly.find(params[:id])
