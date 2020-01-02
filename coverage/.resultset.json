@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/controllers/comments_controller_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/controllers/comments_controller_spec.rb": [
         null,
         null,
         1,
@@ -38,7 +38,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/rails_helper.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/rails_helper.rb": [
         null,
         null,
         null,
@@ -121,14 +121,14 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/environment.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/application.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/application.rb": [
         1,
         null,
         1,
@@ -149,13 +149,13 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/boot.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/spring.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/spring.rb": [
         1,
         null,
         null,
@@ -163,7 +163,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/environments/test.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/environments/test.rb": [
         null,
         null,
         null,
@@ -213,64 +213,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/application_controller_renderer.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/assets.rb": [
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/backtrace_silencers.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/content_security_policy.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -280,14 +223,71 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/cookies_serializer.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/assets.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/backtrace_silencers.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/content_security_policy.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/devise.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/devise.rb": [
         null,
         null,
         null,
@@ -588,13 +588,13 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/filter_parameter_logging.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/friendly_id.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/friendly_id.rb": [
         null,
         null,
         null,
@@ -703,7 +703,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/inflections.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -721,13 +721,13 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/mime_types.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/initializers/wrap_parameters.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -743,7 +743,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/factories/comments.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/factories/comments.rb": [
         null,
         null,
         1,
@@ -754,7 +754,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/factories/likes.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/factories/likes.rb": [
         null,
         null,
         1,
@@ -764,7 +764,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/factories/posts.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/factories/posts.rb": [
         null,
         null,
         1,
@@ -774,7 +774,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/factories/users.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/factories/users.rb": [
         null,
         null,
         1,
@@ -787,7 +787,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/config/routes.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/config/routes.rb": [
         null,
         null,
         1,
@@ -810,7 +810,7 @@
         1,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/models/user.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/models/user.rb": [
         null,
         null,
         1,
@@ -841,21 +841,21 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/models/application_record.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/models/application_record.rb": [
         null,
         null,
         1,
         1,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/helpers/application_helper.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/helpers/application_helper.rb": [
         null,
         null,
         1,
         1,
-        64,
-        64,
-        64,
+        16,
+        16,
+        16,
         null,
         null,
         1,
@@ -867,7 +867,7 @@
         null,
         null,
         1,
-        56,
+        8,
         null,
         null,
         1,
@@ -875,7 +875,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/helpers/comments_helper.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/helpers/comments_helper.rb": [
         null,
         null,
         1,
@@ -884,18 +884,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/helpers/homes_helper.rb": [
-        null,
-        null,
-        1,
-        1,
-        0,
-        null,
-        0,
-        null,
-        null
-      ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/helpers/posts_helper.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/helpers/homes_helper.rb": [
         null,
         null,
         1,
@@ -906,13 +895,24 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/helpers/users_helper.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/helpers/posts_helper.rb": [
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/helpers/users_helper.rb": [
         null,
         null,
         1,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/controllers/comments_controller.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/controllers/comments_controller.rb": [
         null,
         null,
         1,
@@ -953,7 +953,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/controllers/application_controller.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/controllers/application_controller.rb": [
         null,
         null,
         1,
@@ -967,7 +967,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/controllers/homes_controller_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/controllers/homes_controller_spec.rb": [
         null,
         null,
         1,
@@ -1007,7 +1007,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/controllers/homes_controller.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/controllers/homes_controller.rb": [
         null,
         null,
         1,
@@ -1016,7 +1016,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/controllers/likes_controller_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/controllers/likes_controller_spec.rb": [
         null,
         null,
         null,
@@ -1038,7 +1038,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/controllers/posts_controller_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/controllers/posts_controller_spec.rb": [
         null,
         null,
         1,
@@ -1052,7 +1052,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/controllers/posts_controller.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/controllers/posts_controller.rb": [
         null,
         null,
         1,
@@ -1110,7 +1110,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/controllers/users_controller_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/controllers/users_controller_spec.rb": [
         null,
         null,
         null,
@@ -1153,7 +1153,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/features/home_page_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/features/home_page_spec.rb": [
         null,
         null,
         1,
@@ -1193,7 +1193,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/features/user_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/features/user_spec.rb": [
         null,
         null,
         1,
@@ -1263,7 +1263,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/helpers/comments_helper_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/helpers/comments_helper_spec.rb": [
         null,
         null,
         null,
@@ -1282,13 +1282,13 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/helpers/posts_helper_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/helpers/posts_helper_spec.rb": [
 
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/helpers/users_helper_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/helpers/users_helper_spec.rb": [
 
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/models/comment_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/models/comment_spec.rb": [
         null,
         null,
         1,
@@ -1320,7 +1320,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/models/comment.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/models/comment.rb": [
         null,
         null,
         1,
@@ -1330,7 +1330,7 @@
         1,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/models/like_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/models/like_spec.rb": [
         null,
         null,
         1,
@@ -1351,7 +1351,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/models/like.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/models/like.rb": [
         null,
         null,
         1,
@@ -1359,7 +1359,7 @@
         1,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/models/post_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/models/post_spec.rb": [
         null,
         null,
         1,
@@ -1381,7 +1381,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/app/models/post.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/app/models/post.rb": [
         null,
         null,
         1,
@@ -1400,7 +1400,7 @@
         null,
         null
       ],
-      "/home/rockbaze/workspace/labs/facebook-clone/spec/models/user_spec.rb": [
+      "/mnt/c/Users/dell/Desktop/Studies/Microverse/Rails/face/facebook-clone/spec/models/user_spec.rb": [
         null,
         null,
         1,
@@ -1444,6 +1444,6 @@
         null
       ]
     },
-    "timestamp": 1577926411
+    "timestamp": 1577969727
   }
 }
