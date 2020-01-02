@@ -29,6 +29,12 @@
       <%= link_to 'friends', friends_path, class: 'btn btn-success rounded-0'%>
       <% if my_profile @user%>
       <%= link_to 'pending friends', pending_friends_path, class: 'btn btn-success rounded-0'%>
+      <% elsif current_user.friend?(@user)%>
+      <p>You are friends</p>
+      <% elsif current_user.pending_friend? @user%>
+      <button class="btn-primary">Pending Request</button>
+      <% else%>
+      <%= link_to 'Request Friendship', request_friend_path(@user), class: 'btn btn-success rounded-0'%>
       <% end%>
     </div>
   </div>
