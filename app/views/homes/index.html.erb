@@ -1,3 +1,7 @@
+
+<div class="mt-5">
+  <%= render "layouts/flash_message" %>
+</div>
 <div class="card start-feed">
   <div class="card-body start-feed-content">
     <div>
@@ -11,30 +15,4 @@
     </div>
   </div>
 </div>
-<% if !@posts.blank? %>
-<% @posts.each do |post| %>
-<div class="card mt-4">
-  <div class="card-header">
-    <div class="card-flex">
-      <div><%= gravatar_for post.user , 40 %></div>
-      <div class="post-header">
-        <p class="post-header-detail"><%= link_to post_owner(post), post.user%></p>
-        <p class="post-header-detail"><%= post.user.email%></p>
-        <p class="post-header-detail"><%= time_ago_in_words(post.created_at) %> ago</p>
-      </div>
-    </div>
-  </div>
-  <div class="card-body">
-    <p class="card-text"><%= link_to truncate(post.description), post %></p>
-    <div class="img-div"><%= image_tag post.image, width:"500px", class:"img-fluid" if post.image.attached?%></div>
-  </div>
-  <div class="card-footer text-muted like-and-comments">
-    <%= link_to '', like_path(post), class:'like fa fa-thumbs-up'  %>
-    <i><%= post.likes.count %></i>
-    <%= link_to 'comments', new_comment_path(post)%>
-  </div>
-</div>
-<%end%>
-<% else %>
-Nothing Here
-<%end%>
+<%= render "layouts/posts" %>

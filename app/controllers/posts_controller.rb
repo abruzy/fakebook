@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   before_action :find_post, only: %i[edit update]
 
   def index
-    @posts = Post.includes(:user).all.order('created_at DESC')
+    @posts = Post.includes(:user, :likes).all.order('created_at DESC')
   end
 
   def new

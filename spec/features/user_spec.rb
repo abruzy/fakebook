@@ -42,13 +42,6 @@ RSpec.describe 'Users' do
   end
 
   describe 'basics' do
-    # scenario 'can create account' do
-    #   visit root_path
-    #   signup(new_user)
-
-    #   expect(page).to have_content(returning_user.first_name)
-    # end
-
     scenario 'can login' do
       visit root_path
       login(returning_user)

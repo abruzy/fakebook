@@ -1,0 +1,19 @@
+<div class="mt-5">
+  <%= render "layouts/flash_message" %>
+  <% if !@friends.blank? %>
+  <% @friends.each do |friend| %>
+  <div class="card mt-4">
+    <div class="card-body">
+      <div>
+        <%= gravatar_for friend, 50 %>
+        <b><%= link_to name(friend), friend %></b>
+        <p><%= friend.address %></p>
+        <%= link_to 'Accept Friendship', accept_friend_path(friend), class: 'btn btn-success rounded-0'%>
+      </div>
+    </div>
+  </div>
+  <%end%>
+  <% else %>
+  Nothing Here
+  <%end%>
+</div>

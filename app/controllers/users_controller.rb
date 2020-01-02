@@ -2,7 +2,7 @@
 
 class UsersController < ApplicationController
   def index
-    @users = User.all
+    @users = current_user.potential_friends(current_user)
   end
 
   def show

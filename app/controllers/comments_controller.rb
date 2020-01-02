@@ -13,18 +13,23 @@ class CommentsController < ApplicationController
     @comment.save
 
     if @comment.save
+      flash[:success] = 'you liked a post'
       redirect_to post_path(@post)
     else
+      flash[:danger] = 'you have already liked this post'
       render 'new'
     end
   end
 
   def save_like
-    @like = @post.likes.create
-    @like.user_id = current_user.id
-    @like.save
+    current_user.likes.build(post_id: @post.id)
+    if current_user.save
+      flash[:success] = 'you liked a post'
+    else
+      flash[:danger] = 'you have already liked this post'
+    end
 
-    redirect_to '/'
+    redirect_to root_path
   end
 
   private
