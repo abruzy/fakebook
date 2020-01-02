@@ -13,10 +13,10 @@ class CommentsController < ApplicationController
     @comment.save
 
     if @comment.save
-      flash[:success] = 'you liked a post'
+      flash[:success] = 'Comments created successfully'
       redirect_to post_path(@post)
     else
-      flash[:danger] = 'you have already liked this post'
+      flash[:danger] = 'Something went wrong'
       render 'new'
     end
   end
