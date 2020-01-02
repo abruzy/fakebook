@@ -4,6 +4,8 @@ class Post < ApplicationRecord
   extend FriendlyId
   friendly_id :truncated_name, use: :slugged
   belongs_to :user
+  has_many :comments
+  has_many :likes
 
   has_one_attached :image
 

@@ -8,3 +8,26 @@
     <%end%>
   </div> 
 </div>
+
+<h4 class="mt-4">Comments</h4>
+<% if !@post.comments.blank? %>
+<% @post.comments.each do |comment| %>
+<div class="card mt-2">
+  <div class="card-header">
+    <div class="card-flex">
+      <div><%= gravatar_for comment.user , 40 %></div>
+      <div class="post-header">
+        <p class="post-header-detail"><%= link_to comment_owner(comment.user), comment.user%></p>
+        <p class="post-header-detail"><%= comment.user.email%></p>
+        <p class="post-header-detail"><%= time_ago_in_words(comment.created_at) %> ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-text"><%= comment.body%></p>
+  </div>
+</div>
+<%end%>
+<% else %>
+  No Comments Yet
+<%end%>
