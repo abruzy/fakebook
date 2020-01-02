@@ -1,5 +1,6 @@
-require 'rails_helper'
+# # frozen_string_literal: true
 
-RSpec.describe FriendsController, type: :controller do
+# require 'rails_helper'
 
-end
+# RSpec.describe FriendsController, type: :controller do
+# end
