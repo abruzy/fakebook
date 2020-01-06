@@ -16,7 +16,7 @@ RSpec.describe 'homepage;' do
   scenario 'authenticated user sees link to home' do
     visit(root_path)
     fill_in_login_detials
-    # expect(page).to have_content 'Signed in successfully.'
+    expect(page).to have_content 'Signed in successfully.'
     expect(page).to have_content('Facebook')
   end
 

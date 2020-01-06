@@ -31,9 +31,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
-  gem 'capybara', '~> 3.29'
+  gem 'capybara', '~> 3.30'
   gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
   gem 'rspec-rails', '~> 4.0.0.beta3'
+  gem 'faker', '~> 2.10'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
@@ -50,9 +51,8 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'database_cleaner', '~> 1.7'
-  gem 'faker', '~> 2.9'
   gem 'selenium-webdriver'
-  gem 'shoulda-matchers', '~> 4.1.2', require: false
+  gem 'shoulda-matchers', '~> 4.1', '>= 4.1.2'
   gem 'simplecov', require: false
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
