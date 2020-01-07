@@ -14,8 +14,6 @@ RSpec.feature "Likes", type: :feature do
 
   scenario 'authenticated user can like a post' do
     visit(root_path)
-    fill_in_login_detials
-    # expect(page).to have_content 'Signed in successfully.'
     find(:css, '.fa-thumbs-up').click()
     expect(post.likes.count).to eql(1)
     expect(page).to have_content('you liked a post')
