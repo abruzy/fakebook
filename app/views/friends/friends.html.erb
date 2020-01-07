@@ -1,21 +1,17 @@
-
 <div class="mt-5">
   <% if !@friends.blank? %>
-<% @friends.each do |friend| %>
-<div class="card mt-4">
-  <div class="card-body">
-    <div>
-      <%= gravatar_for friend, 40 %>
-      <b><%= name friend %></b>
-      <p><%= friend.address%></p>
+  <% @friends.each do |friend| %>
+  <div class="card mt-4">
+    <div class="card-body">
+      <div>
+        <%= gravatar_for friend, 50 %>
+        <b><%= link_to name(friend), friend %></b>
+        <p><%= friend.address %></p>
+      </div>
     </div>
   </div>
-</div>
-<%end%>
-<% else %>
-  You ain't gat no friends. Follow the link to find and connect with friends
-  <div class="center">
-    <%= link_to 'find friends', users_path, class: 'btn btn-primary rounded-o'%>
-  </div>
-<%end%>
+  <%end%>
+  <% else %>
+  <%= render 'friends/find_friends'%>
+  <%end%>
 </div>

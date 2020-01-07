@@ -28,7 +28,7 @@ RSpec.describe 'Users' do
   end
 
   def login(user)
-    within '#login' do
+    within 'form.form-inline' do
       fill_in 'user[email]', with: user.email
       fill_in 'user[password]', with: user.password
       click_button 'Log in'
@@ -39,23 +39,5 @@ RSpec.describe 'Users' do
     fill_in 'post[description]', with: description
     fill_in 'post[image]', with: image
     click_button 'Create'
-  end
-
-  describe 'basics' do
-    scenario 'can login' do
-      visit root_path
-      login(returning_user)
-
-      expect(page).to have_content(returning_user.first_name)
-    end
-
-    scenario 'can log out' do
-      visit root_path
-      login(returning_user)
-
-      click_link 'Log out'
-
-      expect(page).not_to have_content(returning_user.first_name)
-    end
   end
 end
