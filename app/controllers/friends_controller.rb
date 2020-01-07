@@ -2,7 +2,6 @@
 
 class FriendsController < ApplicationController
   before_action :find_user, only: %i[create friends pending_friends accept_friend]
-  
   def create
     friendship = current_user.friendships.create
     friendship.friend_id = @user.id
