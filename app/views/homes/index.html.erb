@@ -3,16 +3,6 @@
   <%= render "layouts/flash_message" %>
 </div>
 <div class="card start-feed">
-  <div class="card-body start-feed-content">
-    <div>
-      <a <i class="fa fa-pencil"> <%= link_to "start a post", new_post_path %> </i></a>
-    </div>
-    <div>
-      <a <i class="fa fa-camera"> <%= link_to "upload an image", new_post_path %> </i> </a>
-    </div>
-    <div>
-      <a href="#"> <i class="fa fa-newspaper-o"> </i></a>
-    </div>
-  </div>
+  <%= render "share/feed_icon"%>
 </div>
 <%= render "layouts/posts" %>

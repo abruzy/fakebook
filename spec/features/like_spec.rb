@@ -20,4 +20,5 @@ RSpec.feature "Likes", type: :feature do
     expect(post.likes.count).to eql(1)
     expect(page).to have_content('you liked a post')
   end
+
 end
