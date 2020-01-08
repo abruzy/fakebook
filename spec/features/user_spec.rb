@@ -40,29 +40,4 @@ RSpec.describe 'Users' do
     fill_in 'post[image]', with: image
     click_button 'Create'
   end
-
-  describe 'basics' do
-    scenario 'can create account' do
-      visit root_path
-      signup(new_user)
-
-      expect(page).to have_content('Welcome! You have signed up successfully.')
-    end
-
-    scenario 'can login' do
-      visit root_path
-      login(returning_user)
-
-      expect(page).to have_content(returning_user.first_name)
-    end
-
-    scenario 'can log out' do
-      visit root_path
-      login(returning_user)
-
-      click_link 'Log out'
-
-      expect(page).not_to have_content(returning_user.first_name)
-    end
-  end
 end

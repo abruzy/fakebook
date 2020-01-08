@@ -10,19 +10,25 @@
           <a class="nav-link" <%= link_to "Home", root_path %> </a> <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" <%= link_to "Feeds", posts_path %> </a></a>
+          <a class="nav-link" <%= link_to "Feeds", posts_path %> </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" <%= link_to "New Post", new_post_path %> </a></a>
+          <a class="nav-link" <%= link_to "New Post", new_post_path %> </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" <%= link_to "Make Friends", users_path %> </a></a>
+          <a class="nav-link" <%= link_to "Make Friends", users_path %> </a>
         </li>
         <li class="nav-item">
           <% if current_user%>
           <%= gravatar_for current_user%>
           <% end%>
         </li>
+        <% if current_user && current_user.friend_requests %>
+        <li class="nav-item">
+           <%= link_to " ", friend_request_path , class: 'fa fa-bell ml-2 mt-2', style: 'color: white'%>
+           <b style="color:white"><%= current_user.friend_requests.count%></b>
+        </li>
+        <% end %>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

@@ -2,6 +2,6 @@
 
 class HomesController < ApplicationController
   def index
-    @posts = Post.all.order('created_at DESC')
+    @posts = Post.includes(:user, :likes).all.order('created_at DESC')
   end
 end

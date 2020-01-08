@@ -11,6 +11,7 @@ abort('The Rails environment is running in production mode!') if Rails.env.produ
 require 'rspec/rails'
 require 'shoulda/matchers'
 require 'capybara/rspec'
+require 'capybara/rails'
 require 'devise'
 require 'database_cleaner'
 # Add additional requires below this line. Rails is not loaded until this point!

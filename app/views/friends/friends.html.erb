@@ -1,0 +1,17 @@
+<div class="mt-5">
+  <% if !@friends.blank? %>
+  <% @friends.each do |friend| %>
+  <div class="card mt-4">
+    <div class="card-body">
+      <div>
+        <%= gravatar_for friend, 50 %>
+        <b><%= link_to name(friend), friend %></b>
+        <p><%= friend.address %></p>
+      </div>
+    </div>
+  </div>
+  <%end%>
+  <% else %>
+  <%= render 'friends/find_friends'%>
+  <%end%>
+</div>

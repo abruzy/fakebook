@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_28_135626) do
+ActiveRecord::Schema.define(version: 2019_12_31_072839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,13 +37,12 @@ ActiveRecord::Schema.define(version: 2019_12_28_135626) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.text "body"
-    t.string "image"
-    t.bigint "posts_id"
-    t.bigint "user_id"
+    t.string "body"
+    t.bigint "user_id", null: false
+    t.bigint "post_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["posts_id"], name: "index_comments_on_posts_id"
+    t.index ["post_id"], name: "index_comments_on_post_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
@@ -58,12 +57,22 @@ ActiveRecord::Schema.define(version: 2019_12_28_135626) do
     t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
   end
 
-  create_table "likes", force: :cascade do |t|
-    t.bigint "posts_id"
+  create_table "friendships", force: :cascade do |t|
     t.bigint "user_id"
+    t.bigint "friend_id"
+    t.boolean "comfirmed"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["posts_id"], name: "index_likes_on_posts_id"
+    t.index ["friend_id"], name: "index_friendships_on_friend_id"
+    t.index ["user_id"], name: "index_friendships_on_user_id"
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "post_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["post_id"], name: "index_likes_on_post_id"
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
@@ -103,9 +112,11 @@ ActiveRecord::Schema.define(version: 2019_12_28_135626) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "comments", "posts", column: "posts_id"
+  add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users"
-  add_foreign_key "likes", "posts", column: "posts_id"
+  add_foreign_key "friendships", "users"
+  add_foreign_key "friendships", "users", column: "friend_id"
+  add_foreign_key "likes", "posts"
   add_foreign_key "likes", "users"
   add_foreign_key "posts", "users"
 end

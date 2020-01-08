@@ -1,0 +1,8 @@
+ <div class="mt-5">
+  <h4>Add Comment</h4>
+  <%= form_for(@comment, url: comments_path(@post)) do |f| %>
+    <%= f.text_area :body, class: 'form-control' %>
+    <%= f.submit "Comments", class: "btn btn-primary mt-2" %>
+  <% end %>
+ </div>
+

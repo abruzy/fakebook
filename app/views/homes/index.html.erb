@@ -1,39 +1,7 @@
+<div class="mt-5">
+  <%= render "layouts/flash_message" %>
+</div>
 <div class="card start-feed">
-  <div class="card-body start-feed-content">
-    <div>
-      <a <i class="fa fa-pencil"> <%= link_to "start a post", new_post_path %> </i></a>
-    </div>
-    <div>
-      <a <i class="fa fa-camera"> <%= link_to "upload an image", new_post_path %> </i> </a>
-    </div>
-    <div>
-      <a href="#"> <i class="fa fa-newspaper-o"> </i></a>
-    </div>
-  </div>
+<%= render 'layouts/feeds_icons'%>
 </div>
-<% if !@posts.blank? %>
-<% @posts.each do |post| %>
-<div class="card mt-4">
-  <div class="card-header">
-    <div class="card-flex">
-      <div><%= gravatar_for post.user , 40 %></div>
-      <div class="post-header">
-        <p class="post-header-detail"><%= link_to post_owner(post), post.user%></p>
-        <p class="post-header-detail"><%= post.user.email%></p>
-        <p class="post-header-detail"><%= time_ago_in_words(post.created_at) %> ago</p>
-      </div>
-    </div>
-  </div>
-  <div class="card-body">
-    <p class="card-text"><%= link_to truncate(post.description), post %></p>
-    <div class="img-div"><%= image_tag post.image, width:"500px", class:"img-fluid" if post.image.attached?%></div>
-  </div>
-  <div class="card-footer text-muted">
-    <a><i class="fa fa-thumbs-up"> 7 </i></a></a>
-    <a <i class="fa fa-comment-o"> <%= link_to " comments", new_post_path %> </i></a>
-  </div>
-</div>
-<%end%>
-<% else %>
-Nothing Here
-<%end%>
+<%= render "layouts/posts" %>

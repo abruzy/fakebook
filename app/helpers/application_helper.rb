@@ -9,9 +9,9 @@ module ApplicationHelper
 
   def name(user = nil)
     if user
-      user.first_name + ' ' + user.last_name
+      user.first_name.capitalize + ' ' + user.last_name.capitalize
     else
-      current_user.first_name + ' ' + current_user.last_name
+      current_user.first_name.capitalize + ' ' + current_user.last_name.capitalize
     end
   end
 
