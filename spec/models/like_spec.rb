@@ -11,6 +11,7 @@ RSpec.describe Like, type: :model do
     it { should belong_to(:user) }
     it { should belong_to(:post) }
   end
+<<<<<<< HEAD
 
   # context 'when user likes posts' do
   #   it 'increases number of posts likes by one' do
@@ -40,4 +41,6 @@ RSpec.describe Like, type: :model do
     expect(Like.find_by(id: like.id)).to be_nil
     end
   end
+=======
+>>>>>>> cb18c67142616b6f50655655f9018ad97ce4e41f
 end
