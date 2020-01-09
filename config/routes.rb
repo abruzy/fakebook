@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'friend-requests', to: 'friends#friend_requests', as: :friend_request
   get 'accept-friendship/:id', to: 'friends#accept_friend', as: :accept_friend
 
-  devise_for :users, skip: [:sessions]
+  devise_for :users, skip: [:sessions], :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   as :user do
     get 'login', to: 'devise/sessions#new', as: :new_user_session
     post 'login', to: 'devise/sessions#create', as: :user_session
