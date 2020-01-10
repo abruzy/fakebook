@@ -6,10 +6,11 @@ AllCops:
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
+    - "spec/**/*"
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 160
+  Max: 120
 Metrics/MethodLength:
   Include: ["app/controllers/*"]
   Max: 20
@@ -31,3 +32,5 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
+Lint/NonDeterministicRequireOrder:
+  Enabled: false

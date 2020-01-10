@@ -14,6 +14,10 @@
  *= require_self
  */
 
+ .body {
+    background: #f0f0f0;
+ }
+
  .custom-navbar {
     background-color: #2851A3;
     font-size: small;  
@@ -46,3 +50,23 @@
  .img-div .style_image {
    width: 200px;
  }
+
+ /* Style all font awesome icons */
+.fb {
+  padding: 10px;
+  font-size: 20px;
+  width: 5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fb:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}

@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
+require 'capybara/rspec'
+
 RSpec.configure do |config|
+  config.use_transactional_fixtures = false
+
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)
   end
@@ -9,7 +13,7 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
   end
 
-  config.before(:each, js: true) do
+  config.before(:each, type: :feature) do
     DatabaseCleaner.strategy = :truncation
   end
 
@@ -17,7 +21,7 @@ RSpec.configure do |config|
     DatabaseCleaner.start
   end
 
-  config.after(:each) do
+  config.append_after(:each) do
     DatabaseCleaner.clean
   end
 end
