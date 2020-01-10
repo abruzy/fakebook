@@ -31,3 +31,8 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
+Lint/NonDeterministicRequireOrder:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
