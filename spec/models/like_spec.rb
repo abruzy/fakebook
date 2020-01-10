@@ -11,7 +11,6 @@ RSpec.describe Like, type: :model do
     it { should belong_to(:user) }
     it { should belong_to(:post) }
   end
-<<<<<<< HEAD
 
   # context 'when user likes posts' do
   #   it 'increases number of posts likes by one' do
@@ -20,11 +19,11 @@ RSpec.describe Like, type: :model do
   #   end
   # end
 
-  it "user is present" do
+  it 'user is present' do
     expect(like.user).to be_present
   end
 
-  it "post is present" do
+  it 'post is present' do
     expect(like.post).to be_present
   end
 
@@ -38,9 +37,7 @@ RSpec.describe Like, type: :model do
   context 'when post is deleted' do
     it 'is expected to destroy dependent likes' do
       user.posts.destroy
-    expect(Like.find_by(id: like.id)).to be_nil
+      expect(Like.find_by(id: like.id)).to be_nil
     end
   end
-=======
->>>>>>> cb18c67142616b6f50655655f9018ad97ce4e41f
 end
