@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.feature 'Likes', type: :feature do
@@ -17,5 +19,4 @@ RSpec.feature 'Likes', type: :feature do
     fill_in_login_detials
     expect(post.likes.count).to eql(0)
   end
-
 end
