@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Likes", type: :feature do
+RSpec.feature 'Likes', type: :feature do
   let(:new_user) { FactoryBot.build(:user) }
   let(:post) { FactoryBot.build(:post) }
 
