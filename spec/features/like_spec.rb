@@ -14,11 +14,9 @@ RSpec.feature 'Likes', type: :feature do
     end
   end
 
-  # scenario 'authenticated user can like a post' do
-  #   visit(root_path)
-  #   fill_in_login_detials
-  #   within('.like') { click_on 'Like' }
-  #   expect(post.likes.count).to eql(1)
-  #   expect(page).to have_content('you liked a post')
-  # end
+  scenario 'Default post should have no likes' do
+    visit(root_path)
+    fill_in_login_detials
+    expect(post.likes.count).to eql(0)
+  end
 end
