@@ -33,8 +33,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   gem 'capybara', '~> 3.30'
   gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
-  gem 'rspec-rails', '~> 4.0.0.beta3'
   gem 'faker', '~> 2.10'
+  gem 'rspec-rails', '~> 4.0.0.beta3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
