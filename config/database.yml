@@ -26,4 +26,4 @@ test:
 
 production:
   <<: *default
-  database: postgresql
+  database: db/production.postgresql
