@@ -14,7 +14,6 @@ class User < ApplicationRecord
          omniauth_providers: [:facebook]
 
   validates :first_name, presence: true
-  validates :last_name, presence: true
   validates :email, presence: true, length: { maximum: 255 },
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
@@ -73,8 +72,8 @@ class User < ApplicationRecord
       user.email = auth.info.email
       user.password = password
       user.password_confirmation = password
-      user.first_name = '. '
-      user.last_name = auth.info.name
+      user.first_name = auth.info.name
+      user.last_name = ' '
     end
   end
 end
