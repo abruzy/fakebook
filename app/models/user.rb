@@ -73,7 +73,7 @@ class User < ApplicationRecord
       user.email = auth.info.email
       user.password = password
       user.password_confirmation = password
-      user.first_name = 'Mr '
+      user.first_name = '. '
       user.last_name = auth.info.name
     end
   end
