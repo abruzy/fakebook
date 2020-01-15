@@ -19,7 +19,7 @@
 <br />
 <p align="center">
   <h3 align="center">Facebook Clone</h3>
-  <p align="center">Link to life Version of the <a href="https://web.facebook.com/?_rdc=1&_rdr">app</a></p>
+  <p align="center">Link to life Version of the <a href="https://owl-social.herokuapp.com/">app</a></p>
   <p align="center">
   This app puts together some of the core features of facebook platform
     <br />
