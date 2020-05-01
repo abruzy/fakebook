@@ -51,7 +51,7 @@ class PostsController < ApplicationController
     else
       flash[:danger] = 'Something went wrong, Please try again!'
       redirect_to :back
-    end  
+    end
   end
 
   private
