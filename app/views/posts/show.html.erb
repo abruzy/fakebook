@@ -12,7 +12,8 @@
       <small>Created: <%= time_ago_in_words(@post.created_at)%></small>
     </div>
     <% if owner @post %>
-    <a class="btn btn-primary btn-sm" <%= link_to "Edit", edit_post_path(@post) %></a> 
+    <a class="btn btn-info btn-sm mt-2" <%= link_to "Edit", edit_post_path(@post) %></a>
+    <a class="btn btn-danger btn-sm mt-2" <%= link_to "Delete", @post, data: {confirm: 'Are you sure?'}, :method => :delete %></a> 
     <%end%>
   </div> 
 </div>

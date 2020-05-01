@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
-  before_action :find_post, only: %i[edit update]
+  before_action :find_post, only: %i[edit update destroy]
 
   def index
     @posts = Post.includes(:user, :likes).all.order('created_at DESC')
@@ -42,6 +42,16 @@ class PostsController < ApplicationController
       flash[:danger] = 'Something went wrong, Please try again!'
       render :edit
     end
+  end
+
+  def destroy
+    if @post.destroy
+      flash[:success] = 'post was successfully deleted'
+      redirect_to @post
+    else
+      flash[:danger] = 'Something went wrong, Please try again!'
+      redirect_to :back
+    end  
   end
 
   private
