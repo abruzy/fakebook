@@ -104,15 +104,61 @@ ruby-install ruby
 ```sh
 git clone https://github.com/abruzy/facebook-clone
 ```
- 3. Install pg in your rails app
-```sh
-gem install pg
-``` 
-<!-- 4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-``` -->
 
+
+2. The next thing is to change directory folder
+
+```sh
+cd facebook-clone
+```
+
+3. The next step is to install our dependencies by running the following command below
+
+```sh
+bundle install
+```
+
+4. create a file called '.env' in your root directory and copy the field below and paste it inside that .env file
+
+NB: please replace, for example 'yourpassword' to 'abruzy9463' with the appropiate details
+
+```sh
+POSTGRES_USER='yourpostgresuser'
+POSTGRES_PASSWORD='yourpassword'
+POSTGRES_HOST='yourpostgreshost'
+POSTGRES_DB='yourdatabasename'
+```
+5. The next step is to run the command below
+
+NB: please make sure you have pgadmin installed on your machine
+
+```sh
+rails db:create
+```
+
+6. The next step is to migrate to our database by running the following command
+
+```sh
+rails db:migrate
+```
+
+7. Voila!!, you did a great job but alas, we need to complete the whole step by actually starting our server by running the command below
+
+```sh
+rails s
+```
+
+8. Now to view the app, we need to visit this url below and you can actually see this in your terminal when you start the server
+
+```sh
+http://localhost:3000/
+```
+
+## To run test
+
+```sh
+rspec
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
